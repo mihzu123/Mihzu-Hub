@@ -1,4 +1,10 @@
+--[[
+Cảm Ơn Bạn Đã Sử Dụng Dịch Vụ Tiến Tiny Chấm Sờ Pây, Chúc Bạn Có 1 Trải Nghiệm Vui Vẻ.
+Nếu Có Lỗi Hoặc Cần Hỗ Trợ Hãy Liên Hệ Trên Web Nhé, Bạn Có Thể Pr Cho Bạn Bè Nữa Càng Tốt:D
+Website: tientiny.space
+]]--
 
+------ Vui Lòng Không Xoá Để Hoạt Động, Nếu Xoá Sever Tự Hủy Script :)
 local a = "\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\10"
 local b = "\66\97\99\107\117\112\45\83\99\114\105\112\116\47\109\97\105\110\47\83\101\118\101\114\10"
 local a = a .. b
@@ -2484,11 +2490,11 @@ spawn(function()
     end
 end)
 
-local OrionLib = loadstring(game:HttpGet((' ')))()
-local Window = OrionLib:MakeWindow({Name = "Mihzu Hub", HidePremium = true, IntroText = "Sitink Library", SaveConfig = true, ConfigFolder = "Mihzu Hub"})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Mihzu Hub", HidePremium = false, IntroText = "Sitink Library", SaveConfig = true, ConfigFolder = "Mihzu Hub"})
 ----------Tab-----------------------
 local W = Window:MakeTab({
-    Name = "Status",
+    Name = "Thông Tin",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -2500,19 +2506,19 @@ local M = Window:MakeTab({
 })
 
 local ST = Window:MakeTab({
-    Name = "Settin",
+    Name = "Cài đặt",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local IQ = Window:MakeTab({
-    Name = "Items",
+    Name = "Vật phẩm",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local S = Window:MakeTab({
-    Name = "Stat",
+    Name = "chri số",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -2530,7 +2536,7 @@ local RA = Window:MakeTab({
 })
 
 local LC = Window:MakeTab({
-    Name = "Players",
+    Name = "người chơi",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -2542,31 +2548,31 @@ local Wld = Window:MakeTab({
 })
 
 local SV = Window:MakeTab({
-    Name = "Status Sever",
+    Name = "Thông tin server",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local D = Window:MakeTab({
-    Name = "Devil fruit",
+    Name = "Trái Ác quỷ",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local R = Window:MakeTab({
-    Name = "Race",
+    Name = "Tộc V4",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local SH = Window:MakeTab({
-    Name = "Shop",
+    Name = "cửa hàng",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local C = Window:MakeTab({
-    Name = "Mics",
+    Name = "khác",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -2921,7 +2927,7 @@ end
     
     
     M:AddButton({
-        Name = "nhập hết code",
+        Name = "Reddem All Code",
         Callback = function()
             function RedeemCode(value)
                 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(value)
@@ -2933,7 +2939,7 @@ end
     })
 
     local Section = M:AddSection({
-        Name = "Tự động Farm Level"
+        Name = "Auto farm level"
     })
 
 M:AddParagraph("Main Farm","")
@@ -2973,7 +2979,7 @@ end)
 
 
 M:AddToggle({
-    Name = "đến đảo kitsune",
+    Name = "Tele to Kitsune Island",
     Default = false,
     Flag = "KitsuneIslandTween",
     Save = true,
@@ -3005,7 +3011,7 @@ spawn(function()
 end)
 
 M:AddToggle({
-    Name = "nhặt lửa",
+    Name = "AutoAzureAmber",
     Default = false,
     Flag = "AutoAzureAmber",
     Save = true,
@@ -3080,7 +3086,7 @@ end
 M:AddParagraph("Sea Event","")
 
 M:AddToggle({
-    Name = "Đánh TerrorShark",
+    Name = "Auto Terroshark",
     Default = false,
     Flag = "Terrorshark",
     Save = true,
@@ -3091,7 +3097,7 @@ M:AddToggle({
 })
 
 M:AddToggle({
-    Name = "Đánh Shark",
+    Name = "Auto Shark",
     Default = false,
     Flag = "Shark",
     Save = true,
@@ -3139,7 +3145,7 @@ spawn(function()
 end)
 
 M:AddToggle({
-    Name = "Đánh Piranha",
+    Name = "Auto Piranha",
     Default = false,
     Flag = "Piranha",
     Save = true,
@@ -3151,7 +3157,7 @@ M:AddToggle({
 
 
 M:AddToggle({
-    Name = "Đánh Fish Crew",
+    Name = "Auto Fish Crew",
     Default = false,
     Flag = "FishCrew",
     Save = true,
@@ -3280,7 +3286,7 @@ local Section = M:AddSection({
 M:AddParagraph("Mastery Menu","")
 
 M:AddToggle({
-    Name = "Cày Thông thạo Trái",
+    Name = "Mastery DF",
     Default = false,
     Flag = "Mastery",
     Save = true,
@@ -3294,7 +3300,7 @@ M:AddToggle({
 })
 
 M:AddToggle({
-    Name = "Cày Thông thạo Súng",
+    Name = "Mastery Gun",
     Default = false,
     Flag = "Gun Mastery",
     Save = true,
@@ -3305,7 +3311,7 @@ M:AddToggle({
 })
 
     M:AddSlider({
-        Name = "Máu",
+        Name = "Health",
         Min = 0,
         Max = 100,
         Default = 25,
@@ -3422,7 +3428,7 @@ local Section = M:AddSection({
 })
 
 M:AddToggle({
-    Name = "Đánh Nhanh",
+    Name = "Fast Attack",
     Default = true,
     Flag = "FastAttack",
     Save = false,
@@ -3470,7 +3476,7 @@ local Section = M:AddSection({
 })
 
 M:AddToggle({
-    Name = "Di Chuyển = Reset",
+    Name = "Bypass tp,
     Default = false,
     Flag = "Bypass TP",
     Save = true,
@@ -3506,7 +3512,7 @@ local Section = M:AddSection({
 })
 
 Farmfasttoggle = M:AddToggle({
-    Name = "Cày Nhanh",
+    Name = "Farm fast",
     Default = false,
     Flag = "Farm Fast",
     Save = true,
